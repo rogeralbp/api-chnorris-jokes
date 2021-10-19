@@ -2,7 +2,7 @@
 import { getJoke } from './http-provider'
 
 const body = document.body;
-let btnOtherJoke , olJokesList;
+let btnOtherJoke , olJokesList, jokeNumber = 0;
 
 const createJokeHTML = () => {
 
@@ -34,18 +34,23 @@ const eventsPage = () => {
 
     btnOtherJoke.addEventListener('click', async() => {
 
-        drawJoke( await getJoke() );
+        btnOtherJoke.disabled = true;
+        jokeNumber += 1;
+
+        drawJoke( await getJoke() , jokeNumber );
+
+        btnOtherJoke.disabled = false;
 
     });
 
 }
 
 
-const drawJoke = ( joke ) => {
+const drawJoke = ( joke , jokeNumber ) => {
 
     const olJokeItem = document.createElement('li');
 
-    olJokeItem.innerHTML = `<b> ${joke.id} </b> : ${joke.value}`;
+    olJokeItem.innerHTML = ` <b> ${ jokeNumber } </b> : ${ joke.value }`;
 
     olJokeItem.classList.add('list-group-item');
 
