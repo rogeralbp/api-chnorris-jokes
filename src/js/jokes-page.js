@@ -8,7 +8,7 @@ const createJokeHTML = () => {
 
     const html = 
     `
-    <h1 class="mt-5">Jokes</h1>
+    <h1 class="mt-5">Chuck Norris Jokes - @rogeralbp</h1>
     <hr>
     
     <button class="btn btn-primary" id="other-joke">Other Joke</button>
@@ -50,7 +50,13 @@ const drawJoke = ( joke , jokeNumber ) => {
 
     const olJokeItem = document.createElement('li');
 
-    olJokeItem.innerHTML = ` <b> ${ jokeNumber } </b> : ${ joke.value }`;
+    olJokeItem.innerHTML = 
+    
+    `
+    <b> ${ jokeNumber } </b> : ${ joke.value }
+    <img src=" ${ joke.icon_url } " alt="150">
+
+    `;
 
     olJokeItem.classList.add('list-group-item');
 
