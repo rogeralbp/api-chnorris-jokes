@@ -8,6 +8,11 @@ const createJokeHTML = () => {
 
     const html = 
     `
+    <h1 class="mt-5">Chuck Norris Jokes - @rogeralbp</h1>
+    <hr>
+    
+    <button class="btn btn-primary" id="other-joke">Other Joke</button>
+    
     <ol class="mt-2 list-group" id="joke-ollist">
 
     </ol>
