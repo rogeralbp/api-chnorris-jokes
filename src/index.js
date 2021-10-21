@@ -2,7 +2,10 @@
 import "@babel/polyfill";
 
 
-import { init } from './js/users-page'
+import * as CRUD from './js/crud-provider';
 
-
-init();
+CRUD.getUser(2).then( console.log );
+CRUD.createUser({
+    name: 'Roger',
+    job: 'Software-Engineer'
+});
