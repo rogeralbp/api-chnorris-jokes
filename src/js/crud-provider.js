@@ -36,13 +36,49 @@ const createUser = async( user ) => {
             }
         } );
 
-        //if ( !response.ok ) throw 'Request can not be Completed!';
+        return await response.json();
 
-        //const { data } = await response.json();
+    } catch (error) {
 
-        //return data;
+        throw error;
+        
+    }
+}
 
-        console.log(await response.json());
+const updateUser = async( id , user ) => {
+
+    try {
+
+        const response = await fetch( `${urlCRUD}/${id} `, {
+
+            method: 'PUT',
+            body: JSON.stringify( user ),
+            headers: {
+
+                'Content-Type': 'application/json'
+            }
+        } );
+
+        return await response.json();
+
+    } catch (error) {
+
+        throw error;
+        
+    }
+}
+
+const deleteUser = async( id  ) => {
+
+    try {
+
+        const response = await fetch( `${urlCRUD}/${id} `, {
+
+            method: 'DELETE'
+
+        } );
+
+        return ( response.ok ) ? 'Deleted' : 'Resource can not be Deleted' ;
 
     } catch (error) {
 
@@ -54,5 +90,7 @@ const createUser = async( user ) => {
 export {
    
     getUser,
-    createUser
+    createUser,
+    updateUser,
+    deleteUser
 }
