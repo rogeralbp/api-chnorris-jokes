@@ -1,9 +1,9 @@
-# HTTP API
+# Users CRUD
 
 ## References
 
-- [Chuck Norris API - Jokes](https://api.chucknorris.io/)
-- [Direct EndPoint](https://api.chucknorris.io/jokes/random)
+- [Users API](https://reqres.in/)
+- [Direct EndPoint](https://reqres.in/api/users?page=2)
 
 ## Fundamental Steps
 Once you clone this project you only need to navigate to the folder of this project and there execute the nexts steps by cmd or git bash or vs terminal
