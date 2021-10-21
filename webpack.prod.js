@@ -4,6 +4,7 @@ const OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin');
 const MinifyPlugin            = require('babel-minify-webpack-plugin');
 const { CleanWebpackPlugin }  = require('clean-webpack-plugin');
 
+
 module.exports = {
     mode: 'production',
     optimization: {

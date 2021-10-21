@@ -1,6 +1,7 @@
 
 import { getJoke } from './http-provider'
 
+
 const body = document.body;
 let btnOtherJoke , olJokesList, jokeNumber = 0;
 
