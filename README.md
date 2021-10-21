@@ -1,7 +1,14 @@
-# [Chuck Nurris Jokes API](https://rogeralbp.github.io/api-chnorris-jokes/)
+# API Exercises
 
-## References
+## Chuck Norris
 
+Consumed API that allows showing on screen some of the most famous 
+jokes of the actor Chuck Norris
+
+##  API References
+
+
+- [Demo](https://rogeralbp.github.io/api-chnorris-jokes/)
 - [Chuck Norris API - Jokes](https://api.chucknorris.io/)
 - [Direct EndPoint](https://api.chucknorris.io/jokes/random)
 
@@ -23,7 +30,8 @@ Finally -> If you want to run the application , test live changes , etc you have
 ```
 npm start
 ```
+## More Exericises
 
-## Principal Window
-
-![image](https://user-images.githubusercontent.com/31899798/138190399-a7a10325-c6c6-4050-a873-10df5027eae3.png)
+## [Users CRUD](https://github.com/rogeralbp/api-exercises/tree/users-crud)
+## [Cloud Dinary Exercise](https://github.com/rogeralbp/api-exercises/tree/cldinary-uploads)
+## [Users List](https://github.com/rogeralbp/api-exercises/tree/users-list)
