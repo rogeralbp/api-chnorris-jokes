@@ -1,4 +1,4 @@
-# HTTP API
+# [HTTP API](https://rogeralbp.github.io/api-chnorris-jokes/)
 
 ## References
 
@@ -23,3 +23,7 @@ Finally -> If you want to run the application , test live changes , etc you have
 ```
 npm start
 ```
+
+## Principal Window
+
+![image](https://user-images.githubusercontent.com/31899798/138190399-a7a10325-c6c6-4050-a873-10df5027eae3.png)
