@@ -8,7 +8,7 @@ jokes of the actor Chuck Norris
 ##  API References
 
 
-- [Demo](https://rogeralbp.github.io/api-chnorris-jokes/)
+- [Demo](https://rogeralbp.github.io/api-exercises/)
 - [Chuck Norris API - Jokes](https://api.chucknorris.io/)
 - [Direct EndPoint](https://api.chucknorris.io/jokes/random)
 
