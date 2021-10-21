@@ -2,7 +2,8 @@
 import "@babel/polyfill";
 
 
-//import { init } from './js/jokes-page'
+import { init } from './js/users-page'
 import { getUsers } from './js/http-provider'
 
-getUsers().then(console.log);
+init();
+//getUsers().then(console.log);

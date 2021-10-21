@@ -1,8 +1,10 @@
 
+import { getUsers } from './http-provider'
 
 
 const body      = document.body;
-const tableBody = querySelector('tbody');
+let tableBody;
+let corretaletiveId;
 
 const createHTML = () => {
     
@@ -27,33 +29,18 @@ const createHTML = () => {
     div.innerHTML = html;
     body.appendChild( div );
 
-    // Crear una referencia al TBODY
-    // ya que los TRs van dentro del tbody
-            // querySelector('tbody');
-            // Crear una variable para mantener la referencia?
-    
+    tableBody = document.querySelector('tbody');
 
 }
 
-
-// La función createRowUser debería de recibir un UNICO usuario
-// con la siguiente estructura
-    // {
-    //     "id": 7,
-    //     "email": "michael.lawson@reqres.in",
-    //     "first_name": "Michael",
-    //     "last_name": "Lawson",
-    //     "avatar": "https://s3.amazonaws.com/uifaces/faces/twitter/follettkyle/128.jpg"
-    // }
 const createRowUser = ( user ) => {
 
-    // En la tabla deben de colocar un correlativo empezando en 1
-    // También deben de colocar el avatar
+    corretaletiveId++;
 
     const html = `
-        <td scope="col"> ${ user.id } </td>
+        <td scope="col"> ${ corretaletiveId } </td>
         <td scope="col"> ${ user.email } </td>
-        <td scope="col"> ${ user.first_name } </td>
+        <td scope="col"> ${ user.first_name } ${ user.last_name } </td>
         <td scope="col">
             <img class="img-thumbnail" src="${ user.avatar }">
         </td>
@@ -62,7 +49,6 @@ const createRowUser = ( user ) => {
     const tr = document.createElement('tr');
     tr.innerHTML = html;
 
-    // Añadir el table row (tr) dentro del TBody creado anteriormente
     tableBody.appendChild(tr);
 
 }
@@ -72,9 +58,15 @@ export const init = async() => {
 
     createHTML();
 
-    // Obtener la lista de usuarios usando el servicio creado
-    // Por cada usuario, llamar la función crearFila (for, forEach)
-    // Colocar el init en el index.js, para que se ejecute la creación
+    corretaletiveId = 0;
+
+    const users = await getUsers();
+
+    for (const user of users){
+
+        createRowUser(user);
+        
+    }
 
 }
 

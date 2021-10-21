@@ -35,10 +35,9 @@ const getUsers = async() => {
 
         if ( !response.ok ) throw 'Request can not be Completed!';
 
-        const { data:id, data:email, data:first_name, data:last_name, data:avatar } = await response.json();
+        const { data:users } = await response.json();
 
-        return { data:id, data:email, data:first_name, data:last_name, data:avatar };
-
+        return users;
 
     } catch (error) {
 
