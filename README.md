@@ -5,6 +5,16 @@
 - [Users API](https://reqres.in/)
 - [Direct EndPoint](https://reqres.in/api/users?page=2)
 
+## Update the Remote Branches
+```
+git fetch
+```
+
+## Navigate to this Branch
+```
+git checkout users-list
+```
+
 ## Fundamental Steps
 Once you clone this project you only need to navigate to the folder of this project and there execute the nexts steps by cmd or git bash or vs terminal
 
