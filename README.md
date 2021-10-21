@@ -1,9 +1,16 @@
-# Users CRUD
+# Cloud Dinary Exercise
 
-## References
+## Update the Remote Branches
+```
+git fetch
 
-- [Users API](https://reqres.in/)
-- Direct EndPoint; List Users, Create User, Update User, Delete User
+```
+
+## Navigate to this Branch
+```
+git checkout cldinary-uploads
+
+```
 
 ## Fundamental Steps
 Once you clone this project you only need to navigate to the folder of this project and there execute the nexts steps by cmd or git bash or vs terminal
