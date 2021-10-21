@@ -33,5 +33,14 @@ npm start
 ## More Exericises
 
 ## [Users CRUD](https://github.com/rogeralbp/api-exercises/tree/users-crud)
+
+CRUD of users using a popular and free API.
+
 ## [Cloud Dinary Exercise](https://github.com/rogeralbp/api-exercises/tree/cldinary-uploads)
+
+Window to upload images to a CloudDinary account throug an API
+
 ## [Users List](https://github.com/rogeralbp/api-exercises/tree/users-list)
+
+
+Windows that shows a a List of Users consuming though an API
