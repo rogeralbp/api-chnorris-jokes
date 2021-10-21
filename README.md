@@ -3,13 +3,11 @@
 ## Update the Remote Branches
 ```
 git fetch
-
 ```
 
 ## Navigate to this Branch
 ```
 git checkout cldinary-uploads
-
 ```
 
 ## Fundamental Steps
