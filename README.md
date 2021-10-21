@@ -1,4 +1,4 @@
-# [HTTP API](https://rogeralbp.github.io/api-chnorris-jokes/)
+# [Chuck Nurris Jokes API](https://rogeralbp.github.io/api-chnorris-jokes/)
 
 ## References
 
